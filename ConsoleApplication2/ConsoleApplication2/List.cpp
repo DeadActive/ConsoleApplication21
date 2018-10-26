@@ -147,6 +147,54 @@ void List::delete_console()
 		this->delete_n(i);
 }
 
+Human* List::find_byname(const char* str)
+{
+	unsigned int length = this->length();
+	Human * h;
+	Node * n;
+
+	for (int i = 0; i < length; i++)
+	{
+		n = this->get_n(i);
+		h = (Human*)n->data;
+		if (strcmp(str, h->get_surname()) == 0)
+			return h;
+	}
+
+	return NULL;
+}
+
+List * List::filter_byadress(const char * str, char op)
+{
+	Human* h = NULL;
+	Node* n = NULL;
+	unsigned int length = this->length();
+	List * fList = new List();
+	
+	for (int i = 0; i < length; i++)
+	{
+		n = this->get_n(i);
+		h = (Human*)n->data;
+		if (strcmp(str, h->get_surname()) == 0 && op == 'e')
+		{
+			fList->push(h);
+		}
+
+		if (strcmp(str, h->get_surname()) < 0 && op == 'l')
+		{
+			fList->push(h);
+		}
+
+		if (strcmp(str, h->get_surname()) > 0 && op == 'g')
+		{
+			fList->push(h);
+		}
+
+	}
+	
+	return fList;
+}
+
 //конструктор списка
 List::List()
 {

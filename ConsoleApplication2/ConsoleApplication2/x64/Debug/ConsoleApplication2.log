@@ -1,4 +1,9 @@
-﻿  List.cpp
-c:\users\user\source\repos\consoleapplication21\consoleapplication2\consoleapplication2\list.h(9): warning C4091: typedef : пропускается слева от "Node", когда ни одна переменная не объявлена
+﻿  ConsoleApplication2.cpp
+c:\users\user\source\repos\consoleapplication21\consoleapplication2\consoleapplication2\list.h(10): warning C4091: typedef : пропускается слева от "Node", когда ни одна переменная не объявлена
+  List.cpp
+c:\users\user\source\repos\consoleapplication21\consoleapplication2\consoleapplication2\list.h(10): warning C4091: typedef : пропускается слева от "Node", когда ни одна переменная не объявлена
 c:\users\user\source\repos\consoleapplication21\consoleapplication2\consoleapplication2\list.cpp(92): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\consoleapplication21\consoleapplication2\consoleapplication2\list.cpp(156): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\consoleapplication21\consoleapplication2\consoleapplication2\list.cpp(174): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
   ConsoleApplication2.vcxproj -> C:\Users\user\source\repos\ConsoleApplication21\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
